@@ -8,6 +8,8 @@
 
 #import "DetailViewController.h"
 
+#define METERS_PER_MILE 1609.344
+
 @interface DetailViewController ()
 
 @end
@@ -24,8 +26,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    CLLocationCoordinate2D zoomLocation;
+    zoomLocation.latitude = 42.367082;
+    zoomLocation.longitude= -71.104700;
+    
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.2*METERS_PER_MILE, 0.2*METERS_PER_MILE);
+    [_mapView setRegion:viewRegion animated:YES];
 }
 
 

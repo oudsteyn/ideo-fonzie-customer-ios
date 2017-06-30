@@ -14,6 +14,8 @@
 		52C0918B1F05E03D0062F5A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C091891F05E03D0062F5A9 /* Main.storyboard */; };
 		52C0918D1F05E03D0062F5A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C0918C1F05E03D0062F5A9 /* Assets.xcassets */; };
 		52C091901F05E03D0062F5A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C0918E1F05E03D0062F5A9 /* LaunchScreen.storyboard */; };
+		52C091991F05E3020062F5A9 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C091981F05E3020062F5A9 /* HistoryTableViewCell.m */; };
+		52C0919C1F05E4C70062F5A9 /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C0919B1F05E4C70062F5A9 /* History.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		52C0918C1F05E03D0062F5A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C0918F1F05E03D0062F5A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52C091911F05E03D0062F5A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C091971F05E3020062F5A9 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		52C091981F05E3020062F5A9 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		52C0919A1F05E4C70062F5A9 /* History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = History.h; sourceTree = "<group>"; };
+		52C0919B1F05E4C70062F5A9 /* History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = History.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +71,12 @@
 				52C091811F05E03D0062F5A9 /* AppDelegate.m */,
 				52C091831F05E03D0062F5A9 /* MasterViewController.h */,
 				52C091841F05E03D0062F5A9 /* MasterViewController.m */,
+				52C0919A1F05E4C70062F5A9 /* History.h */,
+				52C0919B1F05E4C70062F5A9 /* History.m */,
 				52C091861F05E03D0062F5A9 /* DetailViewController.h */,
 				52C091871F05E03D0062F5A9 /* DetailViewController.m */,
+				52C091971F05E3020062F5A9 /* HistoryTableViewCell.h */,
+				52C091981F05E3020062F5A9 /* HistoryTableViewCell.m */,
 				52C091891F05E03D0062F5A9 /* Main.storyboard */,
 				52C0918C1F05E03D0062F5A9 /* Assets.xcassets */,
 				52C0918E1F05E03D0062F5A9 /* LaunchScreen.storyboard */,
@@ -115,6 +125,7 @@
 				TargetAttributes = {
 					52C091791F05E03D0062F5A9 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 75YM5CA5X8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -155,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C091991F05E3020062F5A9 /* HistoryTableViewCell.m in Sources */,
 				52C091821F05E03D0062F5A9 /* AppDelegate.m in Sources */,
+				52C0919C1F05E4C70062F5A9 /* History.m in Sources */,
 				52C091851F05E03D0062F5A9 /* MasterViewController.m in Sources */,
 				52C0917F1F05E03D0062F5A9 /* main.m in Sources */,
 				52C091881F05E03D0062F5A9 /* DetailViewController.m in Sources */,
@@ -280,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75YM5CA5X8;
 				INFOPLIST_FILE = Fonzie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.exeloncorp.Fonzie;
@@ -291,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75YM5CA5X8;
 				INFOPLIST_FILE = Fonzie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.exeloncorp.Fonzie;
